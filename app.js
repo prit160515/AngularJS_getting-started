@@ -5,9 +5,9 @@
     .module("myFirstApp", [])
 
     .controller("MyFirstController", function ($scope) {
-      $scope.name = "Prit Patel";
+      $scope.name = "Prit Patel" + "test2";
       $scope.func = (test) => {
-        return `Your work is ${test}`;
+        return `Your passion is ${test}`;
       };
     });
 })();

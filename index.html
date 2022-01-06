@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myFirstApp">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <title>AngularJS</title>
   </head>
   <body>
-    n mn mn m mhvvmhv jcgjcccccccccc
+    <h1>My first Angular App</h1>
+    <div ng-controller="MyFirstController">
+      <div>{{func("SDE")}}</div>
+      <div>This App is owned by {{name}}</div>
+      <input type="text" ng-model="name" />
+    </div>
   </body>
 </html>
